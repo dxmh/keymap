@@ -56,7 +56,7 @@ KEYMAP = [
             ["page down", "left", "down", "right", "home"],
             ["", "word left", "word bspc", "word right", "end"],
         ],
-        "thumbs": {"left": ["shift", held("nav")], "right": ["bspc", "delete"],},
+        "thumbs": {"left": ["", held("nav")], "right": ["bspc", "delete"],},
     },
     {
         "left": [
@@ -69,7 +69,7 @@ KEYMAP = [
             ["", "0", "2", "4", "6"],
             ["", "", "", ":", ";"],
         ],
-        "thumbs": {"left": ["shift", "nav"], "right": ["space", held("sym")],},
+        "thumbs": {"left": ["shift", ""], "right": ["", held("sym")],},
     },
 ]
 
