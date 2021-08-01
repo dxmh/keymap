@@ -48,7 +48,7 @@ KEYMAP = [
     {
         "left": [
             ["", "esc", "prev tab", "next tab", ""],
-            ["", "alt", "ctrl", "cmd", ""],
+            ["", "alt", "ctrl", "super", ""],
             ["", "shift", "", "", ""],
         ],
         "right": [
