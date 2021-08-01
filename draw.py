@@ -6,12 +6,12 @@ INNER_PAD_W = 2
 INNER_PAD_H = 2
 OUTER_PAD_W = KEY_W / 2
 OUTER_PAD_H = KEY_H / 2
-LINE_SPACING = 18
+LINE_SPACING = 15
 
 STYLE = """
     svg {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-        font-size: 14px;
+        font-size: 12px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: #24292e;
@@ -41,51 +41,35 @@ KEYMAP = [
         "right": [
             ["j", "l", "u", "y", "'"],
             ["h", "n", "e", "i", "o"],
-            ["k", "m", ",", ".", ";"],
+            ["k", "m", ",", ".", "/"],
         ],
-        "thumbs": {"left": ["nav", "shift"], "right": ["space", "sym"],},
+        "thumbs": {"left": ["shift", "nav"], "right": ["space", "sym"],},
     },
     {
         "left": [
-            ["esc", "[", "{", "(", "~"],
-            ["-", "*", "=", "_", "$"],
-            ["+", "|", "@", "/", "%"],
+            ["", "esc", "prev tab", "next tab", ""],
+            ["", "alt", "ctrl", "cmd", ""],
+            ["", "shift", "", "", ""],
         ],
         "right": [
-            ["^", ")", "}", "]", "`"],
-            ["#", "cmd", "alt", "ctrl", "shift"],
-            ["", "\\", "&amp;", "?", "!"],
+            ["page up", "tab", "up", "enter", ""],
+            ["page down", "left", "down", "right", "home"],
+            ["", "word left", "word bspc", "word right", "end"],
         ],
-        "thumbs": {"left": ["nav", "shift"], "right": ["space", held("sym")],},
+        "thumbs": {"left": ["shift", held("nav")], "right": ["bspc", "delete"],},
     },
     {
         "left": [
-            ["tab", "swap win", "tab left", "tab right", "vol up"],
-            ["shift", "ctrl", "alt", "cmd", "vol down"],
-            ["space left", "space right", "back", "fwd", "play"],
+            ["", "`", "9", "[", ""],
+            ["7", "5", "3", "1", ""],
+            ["=", "\\", "", "", ""],
         ],
         "right": [
-            ["reset", "home", "up", "end", "del"],
-            ["caps lock", "left", "down", "right", "bspc"],
-            ["", "page down", "page up", "swap lang", "enter"],
+            ["", "]", "8", "-", ""],
+            ["", "0", "2", "4", "6"],
+            ["", "", "", ":", ";"],
         ],
-        "thumbs": {"left": [held("nav"), "shift"], "right": ["space", "sym"],},
-    },
-    {
-        "left": [
-            ["7", "5", "3", "1", "9"],
-            ["shift", "ctrl", "alt", "cmd", "f11"],
-            ["f7", "f5", "f3", "f1", "f9"],
-        ],
-        "right": [
-            ["8", "0", "2", "4", "6"],
-            ["f10", "cmd", "alt", "ctrl", "shift"],
-            ["f8", "f12", "f2", "f4", "f6"],
-        ],
-        "thumbs": {
-            "left": [held("nav"), "shift"],
-            "right": ["space", held("sym")],
-        },
+        "thumbs": {"left": ["shift", "nav"], "right": ["space", held("sym")],},
     },
 ]
 
@@ -96,7 +80,7 @@ HAND_H = 4 * KEYSPACE_H
 LAYER_W = 2 * HAND_W + OUTER_PAD_W
 LAYER_H = HAND_H
 BOARD_W = LAYER_W + 2 * OUTER_PAD_W
-BOARD_H = 4 * LAYER_H + 5 * OUTER_PAD_H
+BOARD_H = 3 * LAYER_H + 5 * OUTER_PAD_H
 
 
 def print_key(x, y, key):
