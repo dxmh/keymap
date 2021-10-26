@@ -43,33 +43,33 @@ KEYMAP = [
             ["m", "n", "e", "i", "o"],
             ["k", "h", ",", ".", "/"],
         ],
-        "thumbs": {"left": ["shift", "nav"], "right": ["space", "sym"],},
+        "thumbs": {"left": ["nav", "shift"], "right": ["space", "num"],},
     },
     {
         "left": [
-            ["", "esc", "prev tab", "next tab", ""],
-            ["", "alt", "ctrl", "super", ""],
-            ["", "shift", "", "", ""],
-        ],
-        "right": [
-            ["page up", "tab", "up", "enter", ""],
-            ["page down", "left", "down", "right", "home"],
-            ["", "word left", "word bspc", "word right", "end"],
-        ],
-        "thumbs": {"left": ["", held("nav")], "right": ["bspc", "delete"],},
-    },
-    {
-        "left": [
-            ["", "-", "6", "`", ""],
-            ["7", "8", "9", "0", ""],
-            ["=", "\\", ":", ";", ""],
-        ],
-        "right": [
-            ["", "[", "5", "]", ""],
-            ["", "1", "2", "3", "4"],
+            ["", "globe", "ctrl", "", ""],
+            ["", "super", "alt", "shift", ""],
             ["", "", "", "", ""],
         ],
-        "thumbs": {"left": ["shift", ""], "right": ["", held("sym")],},
+        "right": [
+            ["", "pgup", "pgdn", "esc", ""],
+            ["", "tab", "up", "enter", ""],
+            ["", "left", "down", "right", ""],
+        ],
+        "thumbs": {"left": [held("nav"), ""], "right": ["bspc", "del"],},
+    },
+    {
+        "left": [
+            ["`", "7", "8", "9", "="],
+            ["0", "4", "5", "6", "-"],
+            ["\\", "1", "2", "3", ";"],
+        ],
+        "right": [
+            ["", "", "ctrl", "globe", ""],
+            ["", "shift", "alt", "super", ""],
+            ["", "", "", "", ""],
+        ],
+        "thumbs": {"left": ["", ""], "right": ["", held("sym")],},
     },
 ]
 
