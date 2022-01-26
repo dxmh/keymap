@@ -48,15 +48,15 @@ KEYMAP = [
     {
         "left": [
             ["", "", "ctrl", "", ""],
-            ["", "super", "alt", "shift", ""],
+            ["", "shift", "alt", "super", ""],
             ["", "", "", "", ""],
         ],
         "right": [
-            ["", "pgup", "pgdn", "esc", ""],
-            ["", "tab", "up", "enter", ""],
+            ["", "shift tab", "tab", "esc", ""],
+            ["", "bspc", "up", "enter", "del"],
             ["", "left", "down", "right", ""],
         ],
-        "thumbs": {"left": [held("nav"), ""], "right": ["bspc", "del"],},
+        "thumbs": {"left": [held("nav"), ""], "right": ["", ""],},
     },
     {
         "left": [
@@ -66,7 +66,7 @@ KEYMAP = [
         ],
         "right": [
             ["", "", "ctrl", "", ""],
-            ["", "shift", "alt", "super", ""],
+            ["", "super", "alt", "shift", ""],
             ["", "", "", "", ""],
         ],
         "thumbs": {"left": ["", ""], "right": ["", held("sym")],},
