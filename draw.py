@@ -69,7 +69,7 @@ KEYMAP = [
             ["", "super", "alt", "shift", ""],
             ["", "", "", "", ""],
         ],
-        "thumbs": {"left": ["", ""], "right": ["", held("sym")],},
+        "thumbs": {"left": ["", ""], "right": ["", held("num")],},
     },
 ]
 
