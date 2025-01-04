@@ -52,9 +52,9 @@ KEYMAP = [
             ["", "", "", "", ""],
         ],
         "right": [
-            ["", "`", "tab", "esc", ""],
-            ["", "bspc", "up", "enter", "del"],
-            ["", "left", "down", "right", ""],
+            ["page up", "shift tab", "tab", "esc", "`"],
+            ["page down", "bspc", "up", "enter", "del"],
+            ["home", "left", "down", "right", "end"],
         ],
         "thumbs": {"left": [held("nav"), ""], "right": ["", ""],},
     },
